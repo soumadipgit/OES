@@ -1,0 +1,20 @@
+
+OES (Admin)
+1. We have to roles (Admin & Student).
+2. Admin can log in & admin will have a dashboard.
+3. Admin can add Subjects & add their tests also on date & time based.
+4. Admin can update or delete the subjects & teste.
+5. Admin can check how many students are registered.
+
+6. Admin can delete students & their records also.
+
+7. Admin can check students' marks.
+
+OES (Student)
+Students can register and log in.
+2. On Student dashboard show tests on date
+wise.
+3. Students can give the tests & check marks also.
+4. Test have two conditions:
+    1. Students can't attempt tests after the date.
+    2. Students can't attempt two times tests.
