@@ -17,18 +17,20 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
-Route::get('/test',[AuthController::class,'test']);
+Route::get('/test', [AuthController::class, 'test']);
 
 Route::get('/registeration', [AuthController::class, 'loadRegister'])->name('loadRegister');
 Route::post('/registeration', [AuthController::class, 'studentRegister'])->name('studentRegister');
 
-Route::get('/login',function(){
-return redirect('/');
+Route::get('/login', function () {
+    return redirect('/');
 });
 
 Route::get('/', [AuthController::class, 'loadlogin'])->name('loadlogin');
 Route::post('/login', [AuthController::class, 'userLogin'])->name('userLogin');
 Route::get('logout', [AuthController::class, 'userLogout'])->name('userLogout');
+
+// addSubject
 
 Route::group(['middleware' => ['web', 'cheakAdmin']], function () {
     Route::get('/admin/dashboard', [AuthController::class, 'adminDashboard']);

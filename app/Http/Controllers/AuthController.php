@@ -75,12 +75,14 @@ class AuthController extends Controller
 
     public function adminDashboard()
     {
-        return view('layout.admin-layout');
+        return view('admin.dashboard');
     }
+
     public function loadDashboard()
     {
         return view('student.dashboard');
     }
+
     public function userLogout(Request $request)
     {
         $request->session()->flush();
